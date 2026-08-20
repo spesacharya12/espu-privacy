@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <title>ESPU Launcher Privacy Policy</title>
+  <title>ESPU AI Launcher Privacy Policy</title>
   <style>
     :root { font-family: system-ui, sans-serif; color: #102a43; background: #dceaf2; }
     body { margin: 0; }
@@ -23,24 +23,25 @@
 <body>
 <main>
 <article>
-  <h1>ESPU Launcher Privacy Policy</h1>
-  <p><strong>Last updated:</strong> August 18, 2026</p>
-  <p>ESPU Launcher operates on your Android device without an ESPU account. The app contains no advertising SDK, analytics SDK, subscription system, or remote customer-data service.</p>
+  <h1>ESPU AI Launcher Privacy Policy</h1>
+  <p><strong>Last updated:</strong> August 19, 2026</p>
+  <p>ESPU AI Launcher operates on your Android device without an ESPU account. The app contains no advertising SDK, analytics SDK, subscription system, or remote customer-data service.</p>
 
   <h2>Data used on the device</h2>
   <p>ESPU reads apps that expose launcher activities so it can work as a home-screen replacement. It stores launcher preferences—such as your optional Home greeting name, favorites, recents, hidden choices, focus choices, freeform positions, themes, and quick notes—in the app's private local storage.</p>
-  <p>If you explicitly grant Notification Access, ESPU can display active notification titles and message previews in Daily Hub and can offer a reply when the source app provides Android's standard quick-reply action. ESPU processes this information on the device and does not upload or persist notification content.</p>
+  <p>If you explicitly grant Notification Access, ESPU can display active notification titles and message previews in the ESPU Island and in the relevant app's long-press preview. ESPU can offer a reply when the source app provides Android's standard quick-reply action. ESPU processes this information on the device, does not create a separate notification inbox, and does not upload or persist notification content. Repeating charging, USB, battery, System UI, and persistent service notices are filtered from ESPU surfaces and remain Android's responsibility.</p>
   <p>If you explicitly grant Contacts access and ask ESPU AI to call or text a saved person, ESPU searches contact names and phone numbers on the device to prepare the requested Android dialer or message draft. ESPU does not persist or upload contact records.</p>
   <p>If you enable screen-lock access, Android grants ESPU only the device-admin force-lock policy. ESPU invokes it only after your double-tap gesture or an ESPU AI voice command that you confirm on screen. ESPU does not erase the device, change its screen-lock credential, restart or power off the device, or administer other policies.</p>
   <p>Private Space uses Android's system authentication prompt. ESPU does not receive or store fingerprint, face, PIN, pattern, or password data. Hidden choices affect ESPU's interface; they do not uninstall or encrypt an app.</p>
   <p>Battery/charging status, power-saver state, local time zone, and Android wallpaper colors may be read locally to adapt the interface. ESPU does not request location access.</p>
   <p>ESPU AI uses one local command path for typing, explicit voice requests, and Home recommendations. It can open installed apps and supported Android destinations, start timers, open alarms and calendar views, prepare communication or calendar drafts for review, control an active media session, answer limited device-status questions, and change ESPU launcher settings. “Deep Thinking” is deterministic on-device planning and comparison logic; it is not a remote generative-AI service and does not claim live facts.</p>
   <p>When you enable Private adaptive learning, ESPU AI stores bounded app-launch counters, weekday/weekend time contexts, recent-use timestamps, next-app counters, and suggestion feedback in private local storage. Turning it off pauses new habit collection. ESPU does not retain a raw activity timeline. App-habit suggestions require repeated, recent on-device evidence and ESPU asks before applying every change. While Private Space is locked, ESPU AI filters hidden apps from notification results.</p>
-  <p>ESPU does not have unrestricted access to your phone. Android permissions, installed-app support, confirmation screens, and protected-system limits determine which actions can run. ESPU does not bypass Android security, silently send messages, place calls, save calendar entries, install apps, change protected settings, or read another app's private data.</p>
+  <p>ESPU is an Android Home app, not an operating system. Android owns protected system UI, car-display and Android Auto surfaces, permission prompts, package installation, and package removal. ESPU does not have unrestricted access to your phone. Android permissions, installed-app support, confirmation screens, and protected-system limits determine which actions can run. ESPU does not bypass Android security, silently send messages, place calls, save calendar entries, install apps, change protected settings, or read another app's private data.</p>
   <p>ESPU AI does not access, read, or store passwords, PINs, banking details, or payment credentials. Never enter them in an ESPU AI command.</p>
-  <p>If you enable “Hey Espu” anywhere, ESPU uses microphone access in a user-visible Android foreground service and processes the wake phrase and command with its bundled offline speech model. Android shows a persistent microphone notification and you can turn listening off at any time.</p>
+  <p>If you enable “Hey Espu” anywhere, ESPU uses microphone access in a user-visible Android foreground service. ESPU prefers on-device recognition and includes a bundled offline Vosk fallback. Depending on the device and Android speech-provider configuration, a command may be processed by the configured Android speech provider under that provider's privacy terms. ESPU does not send voice recordings to an ESPU server. Android shows a persistent microphone notification and you can turn listening off at any time.</p>
   <p>Home weather ambience can use the device clock for automatic scenes or retrieve weather for a place you explicitly enter. A live-weather request sends that place query to the weather/geocoding service but does not use Android device-location permission.</p>
-  <p>If you choose My Photo, Android's system document picker grants ESPU persistent read access only to the image you selected. ESPU stores the selected content reference and a locally sampled average color to render a Home-only wallpaper with time-aware contrast. ESPU does not request gallery or broad file access, upload the photo, or change your system or lock-screen wallpaper.</p>
+  <p>If you choose My Photo, Android's system document picker grants ESPU persistent read access only to the image you selected. ESPU stores the selected content reference and a locally sampled average color, then uses Android's WallpaperManager to apply the image to the system Home wallpaper and, when you explicitly choose it on a supported device, the Lock wallpaper. ESPU does not request gallery or broad file access or upload the photo. Android Auto and other car-display backgrounds remain independently controlled by Android and the vehicle.</p>
+  <p>ESPU listens for Android package-added and package-removed events so newly installed launcher apps can appear without a manual reload and confirmed removals can disappear. Choosing Uninstall opens Android's required confirmation screen; ESPU refreshes its local launcher data only after Android confirms the package is gone.</p>
   <p>Android widgets remain provided by their source apps. ESPU shows one compatible widget choice per visible installed app and stores Android-assigned widget identifiers locally so it can host five Home widget slots. Removing a widget releases its identifier but does not uninstall its provider app.</p>
 
   <h2>Sharing and backup</h2>
